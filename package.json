@@ -1,0 +1,40 @@
+{
+  "name": "kanz2",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "client": "cd client && npm run start",
+    "start": "node ./server/server.js",
+    "server": "nodemon ./server/server.js",
+    "build": "cd client && npm run build",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "compression": "^1.7.4",
+    "env2": "^2.2.2",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.1",
+    "pg": "^7.12.1",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "concurrently": "^4.1.2",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^9.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
